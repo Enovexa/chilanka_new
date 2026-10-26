@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blog | Chilanka School of Indian Dance</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Courier+Prime&family=Abril+Fatface&family=Anton&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e3cdbd;--ink:#000;--line:#000;--ember:#d9420f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);overflow-x:hidden;width:100%;max-width:100%}
+body{width:100%;max-width:100%;position:relative;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:"Archivo","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:clip}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 28px;background:transparent;position:sticky;top:0;z-index:50}
+.brand img{height:110px;width:auto;display:block}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.02em}
+nav a:hover{color:var(--ember)}nav a:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+h1{font-weight:900;font-stretch:125%;font-size:clamp(46px,15.2vw,230px);line-height:.92;letter-spacing:-.045em;padding:36px 0 0;margin-left:-14px;white-space:nowrap}
+.row{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:28px;align-items:start}
+.photo{aspect-ratio:4/5;overflow:hidden;background:#2a2a2a}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.tag{font-weight:800;font-stretch:112%;font-size:clamp(20px,2.6vw,32px);line-height:1.05;letter-spacing:-.02em;text-transform:uppercase;max-width:14em}
+.tag+p{margin-top:18px;max-width:34ch;line-height:1.5;font-size:15px}
+.cta{display:inline-block;margin-top:22px;padding:12px 22px;background:var(--ink);color:var(--bg);text-decoration:none;font-size:14px;font-weight:600}
+.cta:hover{background:var(--ember)}
+@keyframes up{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+nav,h1,.photo,.row>div:last-child{animation:up .9s cubic-bezier(.22,1,.36,1) both}
+nav{animation-delay:.05s}h1{animation-delay:.2s}.photo{animation-delay:.4s}.row>div:last-child{animation-delay:.55s}
+@media(prefers-reduced-motion:reduce){nav,h1,.photo,.row>div:last-child{animation:none}}
+#loader{position:fixed;inset:0;z-index:100;background:var(--bg);display:grid;place-items:center;transition:opacity .6s ease,visibility .6s;animation:failsafe .6s 5s forwards}
+#loader.done{opacity:0;visibility:hidden}
+@keyframes failsafe{to{opacity:0;visibility:hidden}}
+.ring{position:relative;width:min(170px,48vw);aspect-ratio:1;display:grid;place-items:center}
+.ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid rgba(0,0,0,.12);border-top-color:var(--ember);border-right-color:var(--ember);animation:spin 1.1s linear infinite}
+.ring img{width:74%;height:auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading nav,.loading h1,.loading .photo,.loading .row>div:last-child{animation-play-state:paused}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding:12px 28px 0;font-size:13px;animation:up .9s cubic-bezier(.22,1,.36,1) .0s both}
+.topbar a{color:var(--ink);text-decoration:none}.topbar a:hover{color:var(--ember)}.topbar a:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.social{display:flex;gap:16px}.social svg{width:18px;height:18px;fill:currentColor;display:block}
+.contact{display:flex;gap:26px;flex-wrap:wrap}
+.loading .topbar{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.topbar{animation:none}}
+.info{display:flex;flex-direction:column;justify-content:space-between;align-self:stretch;gap:48px}
+.about p{font-family:"Courier Prime","Courier New",monospace;font-size:13px;line-height:1.6;max-width:46ch}
+.ghost{display:inline-block;margin-top:28px;padding:10px 18px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-family:"Courier Prime","Courier New",monospace;font-size:13px}
+.ghost:hover{background:var(--ink);color:var(--bg)}.ghost:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+@media(max-width:760px){.topbar{padding:12px 16px 0}.brand img{height:84px}nav{padding:10px 16px}nav ul{gap:14px}.row{grid-template-columns:1fr;padding:20px 16px}h1{padding:24px 16px 0}}
+
+/* background reveal + paragraph slide-in */
+
+/* Why section: left-aligned text, dancer blended on the right */
+
+/* Why section on light paisley background */
+
+/* Gallery section */
+
+
+/* Call to action */
+.join{position:relative;background:var(--bg);color:var(--ink);padding:10vh clamp(16px,5vw,80px)}
+.join .box{position:relative;width:100%;max-width:1280px;margin:0 auto;background:#4a0d14;color:#f6e3d3;border:none;border-radius:28px;padding:clamp(28px,4vw,52px) clamp(28px,5vw,72px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) auto;align-items:center;gap:clamp(20px,3.5vw,56px);box-shadow:0 20px 50px rgba(60,20,10,.3)}
+.join h2{font-family:"Abril Fatface","Archivo",Georgia,serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.4vw,52px);line-height:1.05;color:#e8b638;background:linear-gradient(#ffe69a,#e0a526 55%,#b97a16);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(2px 3px 0 #2e0709)}
+.join p{font-family:"Courier Prime","Courier New",monospace;font-size:14px;line-height:1.6}
+.join .cta{margin:0;background:#e8b638;color:#2e0709;padding:16px 30px;white-space:nowrap}
+.join .cta:hover{background:var(--ember);color:#fff}.join .cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.js .join .box>*{opacity:0;transform:translateY(30px);transition:opacity 1.1s cubic-bezier(.22,1,.36,1),transform 1.1s cubic-bezier(.22,1,.36,1)}
+.js .join .box>:nth-child(2){transition-delay:.12s}.js .join .box>:nth-child(3){transition-delay:.24s}
+.js .join.in .box>*{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .join .box>*{opacity:1;transform:none;transition:none}}
+@media(max-width:900px){.join .box{grid-template-columns:1fr;text-align:center;justify-items:center}}
+/* Footer */
+footer.site{background:#2e0709;color:#f6e3d3;padding:clamp(48px,8vh,88px) clamp(20px,6vw,100px) 0;font-size:14px}
+footer.site a{color:inherit;text-decoration:none}footer.site a:hover{color:#e8b638}footer.site a:focus-visible{outline:2px solid #e8b638;outline-offset:3px}
+footer.site .cols{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1fr;gap:clamp(28px,4vw,64px)}
+footer.site .logo{display:inline-block;background:var(--bg);border-radius:18px;padding:10px 16px}
+footer.site .logo img{height:84px;width:auto;display:block}
+footer.site .about-f{margin-top:18px;font-family:"Courier Prime","Courier New",monospace;line-height:1.6;max-width:36ch;font-size:13px;opacity:.9}
+footer.site h3{font-weight:800;font-stretch:112%;text-transform:uppercase;font-size:13px;letter-spacing:.08em;color:#e8b638;margin-bottom:16px}
+footer.site ul{list-style:none;padding:0;display:grid;gap:10px}
+footer.site address{font-style:normal;display:grid;gap:10px;font-family:"Courier Prime","Courier New",monospace;font-size:13px;line-height:1.5}
+footer.site .social{margin-top:18px}
+footer.site .social svg{width:20px;height:20px}
+footer.site .bottom{max-width:1280px;margin:clamp(36px,6vh,64px) auto 0;padding:20px 0 28px;border-top:1px solid rgba(246,227,211,.2);display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-size:12px;opacity:.8}
+@media(max-width:900px){footer.site .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){footer.site .cols{grid-template-columns:1fr}}
+/* About section */
+/* About: button under text, right aligned */
+
+/* Mobile menu button (hidden on desktop) */
+.menu-btn{display:none;width:44px;height:44px;padding:0;border:0;background:transparent;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--ink);flex-shrink:0}
+.menu-btn span{display:block;width:26px;height:2px;background:currentColor;border-radius:2px;transition:transform .3s ease,opacity .2s ease}
+.menu-btn:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+nav.open .menu-btn span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+nav.open .menu-btn span:nth-child(2){opacity:0}
+nav.open .menu-btn span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* Mobile layout */
+@media(max-width:760px){
+nav{position:sticky;top:0;z-index:60;background:transparent;padding:6px 16px;flex-wrap:nowrap;gap:12px;box-shadow:none}
+.brand img{height:60px}
+.menu-btn{display:flex}
+nav ul{position:absolute;top:100%;left:0;right:0;flex-direction:column;flex-wrap:nowrap;gap:0;background:var(--bg);box-shadow:0 14px 24px rgba(60,20,10,.18);border-top:1px solid rgba(0,0,0,.12);max-height:0;overflow:hidden;opacity:0;visibility:hidden;transition:max-height .4s ease,opacity .3s ease,visibility .4s}
+nav.open ul{max-height:80vh;opacity:1;visibility:visible}
+nav li{border-bottom:1px solid rgba(0,0,0,.1)}
+nav li:last-child{border-bottom:0}
+nav ul a{display:block;padding:16px 20px;font-size:16px;font-weight:600;letter-spacing:.02em;text-align:left}
+.topbar{justify-content:center;gap:8px 16px;padding:10px 16px 0;font-size:12px}
+.contact{gap:6px 16px;justify-content:center}
+h1{margin-left:0;padding:20px 0 0;font-size:13vw;text-align:center;max-width:100%;overflow:hidden}
+.row{gap:24px}
+.programs,.why,.gallery,.velvet,.join,footer.site{max-width:100vw}
+.info{gap:32px}
+.tag{max-width:none}
+.about p{max-width:none}
+.join{padding:8vh 16px}
+.join .cta{width:100%;text-align:center}
+}
+
+/* About hero */
+
+/* About photo band */
+
+/* About story */
+
+/* Instructors */
+
+/* Our Journey */
+
+/* Achievements */
+
+/* Blog */
+.blog{background:var(--bg);color:var(--ink);padding:clamp(40px,8vh,90px) clamp(16px,6vw,110px) clamp(56px,10vh,120px)}
+.blog .head{display:flex;flex-direction:column;align-items:flex-start;gap:20px;max-width:60ch;margin-bottom:clamp(32px,6vw,72px)}
+.blog .eyebrow{font-family:"Courier Prime","Courier New",monospace;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember)}
+.blog h2{font-weight:800;font-stretch:112%;text-transform:uppercase;font-size:clamp(28px,4.4vw,64px);line-height:1;letter-spacing:-.03em}
+.blog .intro{font-family:"Courier Prime","Courier New",monospace;font-size:15px;line-height:1.6}
+.blog .grid{display:grid;grid-template-columns:minmax(0,420px);gap:clamp(16px,2.4vw,36px)}
+.blog .card{display:flex;flex-direction:column;background:#f3e6db;border-radius:22px;overflow:hidden;box-shadow:0 16px 40px rgba(60,20,10,.18);transition:box-shadow .4s}
+.blog .card:hover{box-shadow:0 24px 56px rgba(60,20,10,.28)}
+.blog .pic{display:block;aspect-ratio:4/3;overflow:hidden;background:#4a0d14}
+.blog .pic img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.blog .card:hover .pic img{transform:scale(1.06)}
+.blog .body{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:clamp(20px,2.2vw,30px);flex:1}
+.blog .tag{font-family:"Courier Prime","Courier New",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ember)}
+.blog h3{font-weight:800;font-stretch:108%;text-transform:uppercase;font-size:clamp(18px,1.7vw,24px);letter-spacing:-.02em;line-height:1.1}
+.blog h3 a{color:inherit;text-decoration:none}.blog h3 a:hover{color:var(--ember)}
+.blog .body p{font-family:"Courier Prime","Courier New",monospace;font-size:14px;line-height:1.6}
+.blog .more{margin-top:auto;display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-family:"Courier Prime","Courier New",monospace;font-size:14px;font-weight:700;transition:background .25s,color .25s,gap .25s}
+.blog .more:hover{background:var(--ink);color:var(--bg);gap:14px}
+.blog a:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.js .blog .head>*,.js .blog .card{opacity:0;transform:translateY(40px);transition:opacity 1.1s cubic-bezier(.22,1,.36,1),transform 1.1s cubic-bezier(.22,1,.36,1),box-shadow .4s}
+.js .blog .head>:nth-child(2){transition-delay:.1s}.js .blog .head>:nth-child(3){transition-delay:.2s}
+.js .blog .card:nth-child(3n+2){transition-delay:.12s}.js .blog .card:nth-child(3n+3){transition-delay:.24s}
+.js .blog .head>*.in,.js .blog .card.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .blog .head>*,.js .blog .card{opacity:1;transform:none;transition:none}.blog .pic img{transition:none}}
+@media(max-width:620px){.blog{padding:32px 16px 64px}.blog .grid{grid-template-columns:1fr}}
+nav a[aria-current="page"]{color:var(--ember);font-weight:700}</style></head><body>
+<div class="topbar"><div class="social"><a href="https://www.facebook.com/share/19mUpGvFQ9/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.3H6.8v3.3h2.8V22z"/></svg></a><a href="https://www.instagram.com/chilanka_schoolofindian_dance?xtok=MnluZjNnZnRvbG15" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.2 5.6a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 3c-2.4 0-2.7 0-3.7.1-2.6.1-4 1.600-4.100 4.100C4.100 8.200 4 8.500 4 12s0 3.800.1 4.800c.1 2.600 1.500 4 4.100 4.100 1 .1 1.300.1 3.700.1s2.700 0 3.700-.1c2.600-.1 4-1.500 4.100-4.100.1-1 .1-1.300.1-4.800s0-3.800-.1-4.800c-.1-2.600-1.500-4-4.100-4.100C14.700 3 14.400 3 12 3zm0 1.600c2.400 0 2.700 0 3.600.1 1.800.1 2.700 1 2.800 2.800.1.900.1 1.200.1 3.500s0 2.600-.1 3.500c-.1 1.800-1 2.700-2.800 2.800-.9.1-1.200.1-3.600.1s-2.700 0-3.600-.1c-1.800-.1-2.700-1-2.800-2.800-.1-.9-.1-1.200-.1-3.500s0-2.600.1-3.500c.1-1.800 1-2.700 2.800-2.800.9-.1 1.200-.1 3.600-.1z"/></svg></a></div>
+<div class="contact"><a href="tel:+61400000000">+61 485 603 478</a><a href="mailto:jobikalabhavan@gmail.com">jobikalabhavan@gmail.com</a></div></div>
+<nav><a class="brand" href="index.html"><img alt="Chilanka School of Indian Dance" src="logo.png"></a>
+<button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+<ul id="menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About us</a></li><li><a href="class.html">Classes</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html" aria-current="page">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+<section class="blog" id="blog" aria-label="Blog posts"><div class="head"><span class="eyebrow">Our Blog</span><h2>Stories &amp; Insights</h2><p class="intro">Dance tips, cultural stories and news from the Chilanka studio.</p></div><div class="grid"><article class="card"><a class="pic" href="blog1.html" tabindex="-1" aria-hidden="true"><img src="https://images.pexels.com/photos/34717651/pexels-photo-34717651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A Bharatanatyam dancer performing in Guruvayur" loading="lazy"></a><div class="body"><span class="tag">Classical Dance</span><h3><a href="blog1.html">The Meaning Behind Bharatanatyam Hand Gestures</a></h3><p>Every mudra in Bharatanatyam carries a meaning. Discover how simple hand shapes help dancers tell stories, express emotions and bring ancient tales to life.</p><a class="more" href="blog1.html" aria-label="Read more: The Meaning Behind Bharatanatyam Hand Gestures">Read more <span aria-hidden="true">&rarr;</span></a></div></article></div></section>
+<footer class="site" id="contact"><div class="cols">
+<div><a class="logo" href="index.html"><img alt="Chilanka School of Indian Dance" src="logo.png"></a><p class="about-f">Classical, semi-classical, folk and Western dance classes for children and adults in Brisbane, taught with discipline and joy.</p><div class="social"><a href="https://www.facebook.com/share/19mUpGvFQ9/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.3H6.8v3.3h2.8V22z"/></svg></a><a href="https://www.instagram.com/chilanka_schoolofindian_dance?xtok=MnluZjNnZnRvbG15" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17.2 5.6a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 3c-2.4 0-2.7 0-3.7.1-2.6.1-4 1.600-4.100 4.100C4.100 8.200 4 8.500 4 12s0 3.800.1 4.800c.1 2.600 1.500 4 4.100 4.100 1 .1 1.300.1 3.700.1s2.700 0 3.700-.1c2.600-.1 4-1.500 4.100-4.100.1-1 .1-1.300.1-4.800s0-3.800-.1-4.800c-.1-2.600-1.500-4-4.100-4.100C14.700 3 14.400 3 12 3zm0 1.600c2.400 0 2.700 0 3.600.1 1.800.1 2.700 1 2.800 2.800.1.900.1 1.200.1 3.500s0 2.600-.1 3.500c-.1 1.800-1 2.700-2.800 2.800-.9.1-1.200.1-3.600.1s-2.700 0-3.600-.1c-1.800-.1-2.700-1-2.800-2.800-.1-.9-.1-1.200-.1-3.500s0-2.600.1-3.500c.1-1.800 1-2.700 2.800-2.800.9-.1 1.200-.1 3.600-.1z"/></svg></a></div></div>
+<div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About us</a></li><li><a href="class.html">Classes</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h3>Contact</h3><address><a href="tel:+61400000000">+61 485 603 478</a><a href="mailto:jobikalabhavan@gmail.com">jobikalabhavan@gmail.com</a><span>Brisbane, Queensland, Australia</span></address></div>
+<div><h3>Programs</h3><ul><li><a href="class.html">Bharatanatyam</a></li><li><a href="class.html">Semiclassical Dance</a></li><li><a href="class.html">Bollywood Dance</a></li><li><a href="class.html">Western Dance Style</a></li><li><a href="class.html">Margamkali</a></li><li><a href="class.html">Thiruvathira</a></li></ul></div>
+</div>
+<div class="bottom"><span>&copy; 2026 Chilanka School of Indian Dance. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="#">Terms</a></span></div></footer>
+<script>(function(){var els=document.querySelectorAll('.blog .head>*,.blog .card');if(!('IntersectionObserver' in window)){els.forEach(function(x){x.classList.add('in')});return}var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});els.forEach(function(x){io.observe(x)});setTimeout(function(){els.forEach(function(x){x.classList.add('in')})},6000)})();</script>
+<script>(function(){var n=document.querySelector('nav'),b=document.getElementById('menuBtn');if(!n||!b)return;function set(o){n.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu')}b.addEventListener('click',function(){set(!n.classList.contains('open'))});n.querySelectorAll('ul a').forEach(function(a){a.addEventListener('click',function(){set(false)})});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});document.addEventListener('click',function(e){if(!n.contains(e.target))set(false)});addEventListener('resize',function(){if(innerWidth>760)set(false)})})();</script>
+</body></html>
